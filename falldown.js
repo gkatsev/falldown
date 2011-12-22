@@ -150,11 +150,8 @@ function update()
     ball.move_down();
     ball.draw();
     ctx.save();
-    ctx.translate(10, 20);
     score += 10;
-    //ctx.fillText("Score: " + score, 10, 10);
-    ctx.mozDrawText("Score: " + score);
-    ctx.restore();
+    ctx.fillText("Score: " + score, 10, 20);
   }
 }
 
